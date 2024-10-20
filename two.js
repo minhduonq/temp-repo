@@ -1,0 +1,11 @@
+const os = require('os')
+const user = os.userInfo()
+console.log(user)
+console.log(os.uptime())
+
+const path = require('path')
+console.log(path.sep)
+const filePath = path.join('/content', 'subFolder', 'test.txt')
+console.log(filePath)
+const base = path.basename(filePath)
+console.log(base)
